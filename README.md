@@ -76,6 +76,22 @@ mvn compile
                <password>你的PAT</password>
            </server>
        </servers>
+   
+   <profiles>
+        <profile>
+          <id>github-profile</id>
+          <repositories>
+            <repository>
+              <id>github</id> <!-- 与 server 的 id 一致 -->
+              <url>https://maven.pkg.github.com/twofoursixoone/QoderCnHarness</url>
+            </repository>
+          </repositories>
+        </profile>
+   </profiles>
+   
+   <activeProfiles>
+          <activeProfile>github-profile</activeProfile>
+   </activeProfiles>
    </settings>
    ```
 
