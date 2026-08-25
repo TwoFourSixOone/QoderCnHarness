@@ -35,8 +35,10 @@
    cd <your-repo>
    ```
 3. 修改项目信息：
+   - 运行 `init.ps1` 一键替换项目名，或手动修改以下文件：
    - `pom.xml`：替换 `groupId` 和 `artifactId`
    - `AGENTS.md`：替换项目名称
+   - `QODERCN.md`：按需调整 AI 行为准则
    - `docs/`：按需修改文档内容
 4. 开始开发：
    ```
@@ -96,11 +98,14 @@ mvn compile
 ```
 your-project/
 ├─ AGENTS.md              ← AI 导航地图（入口文件）
+├─ QODERCN.md             ← AI 行为准则（定义 AI 基础行为）
 ├─ REVIEW.md              ← 代码评审标准
+├─ init.ps1               ← 项目初始化脚本（一键替换项目名）
 ├─ docs/                  ← 项目知识库
 │  ├─ architecture/       ← 架构设计 & 隐性约定
 │  ├─ product/            ← 产品规则
-│  └─ standards/          ← 测试 & 数据库规范
+│  ├─ standards/          ← 测试 & 数据库规范
+│  └─ harness-playbook.md ← 操作手册（完整流程演示）
 ├─ openspec/              ← OpenSpec 变更管理
 │  ├─ changes/            ← 进行中的变更
 │  └─ specs/              ← 系统工作原理
