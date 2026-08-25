@@ -15,6 +15,15 @@
 
 ---
 
+## 分支说明
+
+| 分支 | 说明 | 使用方式 |
+|------|------|----------|
+| **main** | 原始项目结构 | 作为 GitHub 模板仓库或克隆后直接使用 |
+| **original-archetype** | Maven Archetype 版本 | 通过 IDEA 的 Maven Archetype 功能创建项目 |
+
+---
+
 ## 快速开始
 
 ### 方式一：作为 GitHub 模板仓库（推荐）
@@ -41,6 +50,44 @@ git clone https://github.com/TwoFourSixOone/QoderCnHarness.git
 cd QoderCnHarness
 mvn compile
 ```
+
+---
+
+## 在 IDEA 中使用 Maven Archetype 创建项目
+
+如果你想通过 IDEA 的 **New Project** 向导直接生成项目，可以使用 `original-archetype` 分支发布的 Maven Archetype。
+
+### 前置配置
+
+1. 生成 GitHub Personal Access Token（需要 `read:packages` 权限）：
+   - 打开 https://github.com/settings/tokens
+   - 点击 **Generate new token (classic)**
+   - 勾选 `read:packages` 权限
+
+2. 配置 Maven `settings.xml`（位于 `~/.m2/settings.xml`）：
+   ```xml
+   <settings xmlns="http://maven.apache.org/SETTINGS/1.2.0">
+       <servers>
+           <server>
+               <id>github</id>
+               <username>你的GitHub用户名</username>
+               <password>你的PAT</password>
+           </server>
+       </servers>
+   </settings>
+   ```
+
+### 在 IDEA 中创建项目
+
+1. **File → New → New Project**
+2. 左侧选择 **Maven Archetype**
+3. 点击 **Add Archetype**，填写：
+   - **GroupId**: `com.github.twofoursixoone`
+   - **ArtifactId**: `qoder-cn-harness-archetype`
+   - **Version**: `1.0.0`
+4. 选中后填写你自己的项目信息（GroupId、ArtifactId），点击 **Create**
+
+新项目会自动生成完整的目录结构，包含 OpenSpec 工作流和 QoderCn AI 配置。
 
 ---
 
