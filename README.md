@@ -46,6 +46,7 @@ mvn archetype:generate \
 ```
 your-project/
 ├─ AGENTS.md                  ← AI 导航地图（入口）
+├─ QODERCN.md             ← AI 行为准则（定义 AI 基础行为）
 ├─ REVIEW.md                  ← 评审标准
 ├─ docs/                      ← 项目知识库
 │  ├─ architecture/           ← 架构知识 & 隐性约定

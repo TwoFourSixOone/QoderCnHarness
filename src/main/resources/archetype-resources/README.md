@@ -112,6 +112,7 @@ mvn compile
 ```
 your-project/
 ├─ AGENTS.md              ← AI 导航地图（入口文件）
+├─ QODERCN.md             ← AI 行为准则（定义 AI 基础行为）
 ├─ REVIEW.md              ← 代码评审标准
 ├─ docs/                  ← 项目知识库
 │  ├─ architecture/       ← 架构设计 & 隐性约定
