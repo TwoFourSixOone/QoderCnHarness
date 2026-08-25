@@ -132,6 +132,24 @@ your-project/
 
 ---
 
+## 操作手册
+
+首次使用？查看 **[Harness 操作手册](docs/harness-playbook.md)**，以「新增用户管理模块」为例，完整演示从需求拆解到代码归档的每一步操作：
+
+1. `/opsx-propose` — 需求拆解，生成工件
+2. 人工审查 proposal — 检查边界、隐性约定
+3. 补充隐性约定 — 写入 `implicit-contracts.md`
+4. 确认 design — 审查技术方案
+5. `/opsx-apply` — 按 tasks 逐步写代码
+6. 专项审查（4 项分开执行）
+7. `/opsx-verify` — 核对实现与工件是否对齐
+8. `/opsx-archive` — 归档 change
+9. 沉淀新隐性约定 — 知识沉淀
+
+> 照着操作手册做一遍，就能跑通整套流程。
+
+---
+
 ## 环境要求
 
 - Java 17+
