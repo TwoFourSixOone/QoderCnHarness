@@ -65,17 +65,33 @@ mvn compile
    - 勾选 `read:packages` 权限
 
 2. 配置 Maven `settings.xml`（位于 `~/.m2/settings.xml`）：
-   ```xml
-   <settings xmlns="http://maven.apache.org/SETTINGS/1.2.0">
-       <servers>
-           <server>
-               <id>github</id>
-               <username>你的GitHub用户名</username>
-               <password>你的PAT</password>
-           </server>
-       </servers>
-   </settings>
-   ```
+```xml
+  <settings xmlns="http://maven.apache.org/SETTINGS/1.2.0">
+   <servers>
+      <server>
+         <id>github</id>
+         <username>你的GitHub用户名</username>
+         <password>你的PAT</password>
+      </server>
+   </servers>
+
+   <profiles>
+      <profile>
+         <id>github-profile</id>
+         <repositories>
+            <repository>
+               <id>github</id> <!-- 与 server 的 id 一致 -->
+               <url>https://maven.pkg.github.com/twofoursixoone/QoderCnHarness</url>
+            </repository>
+         </repositories>
+      </profile>
+   </profiles>
+
+   <activeProfiles>
+      <activeProfile>github-profile</activeProfile>
+   </activeProfiles>
+</settings>
+```
 
 ### 在 IDEA 中创建项目
 
