@@ -4,14 +4,35 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>QoderCnHarness</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>com.github.twofoursixoone</groupId>
+    <artifactId>qoder-cn-harness-archetype</artifactId>
+    <version>1.0.0</version>
+    <packaging>maven-archetype</packaging>
+
+    <name>QoderCnHarness Archetype</name>
+    <description>Java 17 + Maven project scaffold with OpenSpec workflow and QoderCn AI integration</description>
+    <url>https://github.com/TwoFourSixOone/QoderCnHarness</url>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>3.2.1</version>
+            </extension>
+        </extensions>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/TwoFourSixOone/QoderCnHarness</url>
+        </repository>
+    </distributionManagement>
 
 </project>
