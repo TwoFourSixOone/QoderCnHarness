@@ -102,7 +102,7 @@ mvn compile
 3. 点击 **Add Archetype**，填写：
    - **GroupId**: `com.github.twofoursixoone`
    - **ArtifactId**: `qoder-cn-harness-archetype`
-   - **Version**: `1.0.0`
+   - **Version**: `1.0.1`
 4. 选中后填写你自己的项目信息（GroupId、ArtifactId），点击 **Create**
 
 新项目会自动生成完整的目录结构，包含 OpenSpec 工作流和 QoderCn AI 配置。
