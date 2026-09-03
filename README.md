@@ -98,6 +98,7 @@ mvn compile
 ### 在 IDEA 中创建项目
 
 1. **File → New → New Project**
+2. 
 2. 左侧选择 **Maven Archetype**
 3. 点击 **Add Archetype**，填写：
    - **GroupId**: `com.github.twofoursixoone`
