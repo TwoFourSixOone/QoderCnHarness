@@ -1,4 +1,4 @@
-# QoderCnHarness — AI 导航地图
+# ${artifactId} — AI 导航地图
 
 > 本文件是 AI 进入仓库后的**第一份导航文件**，告诉 AI "先看什么、按什么流程做"。  
 > 项目知识、业务规则、隐性约定等详细内容统一放在 `docs/` 目录下，本文件只做导航。
@@ -7,7 +7,7 @@
 
 ## 1. 仓库概述
 
-- **项目名称**：QoderCnHarness
+- **项目名称**：${artifactId}
 - **技术栈**：Java 17 + Maven
 - **工作流**：OpenSpec 变更生命周期管理
 - **AI 平台**：QoderCn

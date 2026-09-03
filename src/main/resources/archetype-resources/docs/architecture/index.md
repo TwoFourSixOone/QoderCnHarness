@@ -1,12 +1,12 @@
 # 项目架构总览
 
-> 本文件描述 QoderCnHarness 项目的整体架构设计，帮助 AI 快速了解系统全貌。
+> 本文件描述 ${artifactId} 项目的整体架构设计，帮助 AI 快速了解系统全貌。
 
 ---
 
 ## 1. 项目概述
 
-- **项目名称**：QoderCnHarness
+- **项目名称**：${artifactId}
 - **技术栈**：Java 17 + Maven
 - **项目定位**：Harness 工程实践示范项目
 
@@ -15,7 +15,7 @@
 ## 2. 项目结构
 
 ```
-QoderCnHarness/
+${artifactId}/
 ├─ src/
 │  ├─ main/java/          ← 主代码目录
 │  └─ main/resources/     ← 资源文件目录
