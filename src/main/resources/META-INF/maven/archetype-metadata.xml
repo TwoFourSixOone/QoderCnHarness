@@ -37,6 +37,7 @@
             <includes>
                 <include>AGENTS.md</include>
                 <include>REVIEW.md</include>
+                <include>QODERCN.md</include>
                 <include>.gitignore</include>
                 <include>init.ps1</include>
             </includes>
